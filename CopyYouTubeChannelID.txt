@@ -48,9 +48,6 @@ function redirectToChannel() {
   }
 }
 
-// Register a menu command to copy the channel ID
-GM_registerMenuCommand("Copy Channel ID", copyChannelId);
-
 // Register a menu command to redirect to the channel URL
 GM_registerMenuCommand("Go to Channel URL", redirectToChannel);
 
