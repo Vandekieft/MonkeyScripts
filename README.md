@@ -8,4 +8,4 @@ Copy YouTube Channel ID
 * Copy Channel URL 
   - Like: http://www.youtube.com/channel/UCBJycsmduvYEL83R_U4JriQ
 * Go to Channel URL
-  - Take you from https://www.youtube.com/@mkbhd to http://www.youtube.com/channel/UCBJycsmduvYEL83R_U4JriQ
+  - Takes you from current Channel URL to Channel ID Url, Like: https://www.youtube.com/@mkbhd to http://www.youtube.com/channel/UCBJycsmduvYEL83R_U4JriQ
