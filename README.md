@@ -1,7 +1,22 @@
 # MonkeyScripts
 A spot for my UserScripts that I have for Violent Monkey
 
-Copy YouTube Channel ID
+# Copy YouTube Channel ID
+
+This is a userscript that adds a "Copy Channel ID" button to the top of YouTube channels. When clicked, this button copies the channel ID to the clipboard. Additionally, this script also provides two menu commands: "Copy Channel URL" and "Go to Channel URL". "Copy Channel URL" copies the URL of the current channel to the clipboard, while "Go to Channel URL" redirects the page to the URL of the current channel.
+
+## Usage
+
+To use this userscript, you will need a userscript manager extension installed in your browser. This script has been tested on the Violentmonkeyv2.13.11 extension for Firefox.
+
+1. Install a userscript manager extension in your browser (if you don't have one already).
+2. Open the userscript manager dashboard and create a new userscript.
+3. Copy and paste the script into the userscript editor.
+4. Save the userscript and refresh the YouTube page.
+
+Once the script is installed and running, you should see a "Copy Channel ID" button at the top of YouTube channels. Clicking this button will copy the channel ID to your clipboard. You can also access the "Copy Channel URL" and "Go to Channel URL" menu commands by right-clicking on the YouTube page.
+
+### > Note:  I have not actually been able to get the button to work, so just the options in the menu are known to work. Check the image for reference.
 
 ![image](https://user-images.githubusercontent.com/834985/221347981-7e9299ce-bef0-403b-b780-23b5759fed82.png)
 
