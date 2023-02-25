@@ -16,7 +16,9 @@ To use this userscript, you will need a userscript manager extension installed i
 
 Once the script is installed and running, you should see a "Copy Channel ID" button at the top of YouTube channels. Clicking this button will copy the channel ID to your clipboard. You can also access the "Copy Channel URL" and "Go to Channel URL" menu commands by right-clicking on the YouTube page.
 
-### > Note:  I have not actually been able to get the button to work, so just the options in the menu are known to work. Check the image for reference.
+### > Note:  
+* I have not actually been able to get the button to work, so just the options in the menu are known to work. Check the image for reference. 
+* If you are loading a @CHANNEL-NAME from the main page, you may have to refresh the page for the script to pull the Channel ID
 
 ![image](https://user-images.githubusercontent.com/834985/221347981-7e9299ce-bef0-403b-b780-23b5759fed82.png)
 
