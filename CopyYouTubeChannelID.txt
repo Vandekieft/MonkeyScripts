@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name     Copy YouTube Channel ID
 // @description Adds a 'Copy Channel ID' button to the top of YouTube channels.
-// @version  1.0
-// @match    https://www.youtube.com/channel/*
+// @version  1.1
 // @match    https://*.youtube.com/@*
 // @match    https://www.youtube.com/@*
-// @match    https://*youtube.com/@*
+// @match    https://youtube.com/@*
+// @match    https://www.youtube.com/@
+// @match    https://www.youtube.com/c/*
 // @grant    GM_setClipboard
 // @grant    GM_registerMenuCommand
 // @icon     https://www.google.com/s2/favicons?domain=youtube.com
@@ -29,7 +30,6 @@ function copyChannelId() {
   document.body.removeChild(textarea); // Remove the temporary textarea element
 }
 
-
 // Define a function to copy the channel URL to the clipboard
 function copyChannelUrl() {
   var justTheId = getChannelId();
@@ -41,7 +41,6 @@ function copyChannelUrl() {
 
 // Register a menu command to copy the channel URL
 GM_registerMenuCommand("Copy Channel URL", copyChannelUrl);
-
 
 // Define a function to redirect to the channel URL
 function redirectToChannel() {
@@ -72,4 +71,18 @@ function getChannelId() {
   return justTheId;
 }
 
+// Listen for changes to the URL using MutationObserver
+var observer = new MutationObserver(function(mutations) {
+  mutations.forEach(function(mutation) {
+    if (mutation.type === 'attributes' && mutation.attributeName === 'href') {
+      // The URL has changed, so update the channel ID
+      var justTheId = getChannelId();
+    }
+  });
+});
+
+// Observe changes to the href attribute of the <a> tag containing the channel name
+var targetNode = document.querySelector('#text > a');
+var config = { attributes: true, childList: false, subtree: false };
+observer.observe(targetNode, config);
 
