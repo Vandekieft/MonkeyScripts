@@ -25,7 +25,10 @@ function copyChannelId() {
   selection.removeAllRanges();
   selection.addRange(range);
   document.execCommand("copy");
- }
+  selection.removeAllRanges(); // Clear the current selection
+  document.body.removeChild(textarea); // Remove the temporary textarea element
+}
+
 
 // Define a function to copy the channel URL to the clipboard
 function copyChannelUrl() {
