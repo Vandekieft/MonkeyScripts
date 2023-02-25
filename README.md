@@ -27,3 +27,6 @@ Once the script is installed and running, you should see a "Copy Channel ID" but
   - Like: http://www.youtube.com/channel/UCBJycsmduvYEL83R_U4JriQ
 * Go to Channel URL
   - Takes you from current Channel URL to Channel ID Url, Like: https://www.youtube.com/@mkbhd to http://www.youtube.com/channel/UCBJycsmduvYEL83R_U4JriQ
+
+
+[MIT License](https://opensource.org/license/mit/)  You can use this script however you want for free.
